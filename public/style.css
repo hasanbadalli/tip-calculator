@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box !important;
+    font-family: 'Dosis', sans-serif !important;
+}
+body{
+    background-color:#c5e4e7;
+    margin: 0;
+}
+
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    gap: 20px;
+    
+}
+
+
+.box{
+    display: flex;
+    min-height: 500px;
+    gap: 40px;
+    width: 1000px;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 20px;   
+}
+
+label{
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: 5px;
+    color: #879b9d;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 460px;
+    height: 150px;
+    color: #00474b !important;
+    font-size: 32px !important;
+    background-image: url("images/icon-dollar.svg");
+    background-repeat: no-repeat;
+    background-size: initial;
+    background-position: 10px center;
+    background-color: #f3f8fb !important;
+    border: none !important;
+    direction: rtl;
+    transition: 0.05s ease-in-out !important;
+}
+
+input:focus, input:hover {
+    outline: 2px solid #00474b;
+}
+
+#bill-input{
+    height: 45px;
+}
+
+.block{
+    
+    height: 55px;
+    background-color: #00474b;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    border: none;
+    letter-spacing: 2px;
+}
+
+
+
+.tip-box{
+    width: 100%;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    margin-bottom: 40px;
+    
+}
+
+h1{
+    
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: 2px;
+    color: #879b9d;
+}
+
+.ablock{
+    background-color: #f3f8fb;
+    color: #879b9d;
+    transition: 0.05s ease-in-out !important;
+}
+.block:hover{
+    background-color: #29c3ac;
+    color: #00474b;
+}
+
+.ablock:hover{
+    background-color: #f3f8fb;
+    
+    outline: 2px #29c3ac solid;
+    color: #29c3ac;
+}
+
+.inp2{
+    background-image: url("images/icon-person.svg");
+}
+
+.box-2{
+    background-color: #00474b;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    padding: 40px 20px 40px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.total{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.tip h3{
+    color: #fff;
+    font-size: 18px;
+    
+}
+
+.tip p{
+    
+    color: #879b9d;
+}
+
+.cost{
+    font-size: 48px;
+    color: #29c3ac;
+}
+
+.bt{
+    width: 100%;
+    margin-top: 20px;
+    background-color: #0c686d;
+    border: none;
+    border-radius: 10px;
+    height: 50px;
+    font-size: 24px;
+    color: #00474b;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.bt:hover{
+    background-color: #29c3ac;
+}
+
+
+@media screen and (max-width: 1200px){
+    .box{
+        flex-direction: column;
+        min-height: auto;
+        width: 100vw;
+    }
+    .container{
+        height: auto;
+        width: 100%;
+    }
+    input{
+        width: 100%;
+    }
+    
+}
+  
+
